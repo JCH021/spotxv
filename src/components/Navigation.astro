@@ -1,0 +1,53 @@
+---
+import LogoSpotify from "@/icons/SpotifyLogo.astro"
+import HomeIcon from "@/icons/Home.astro"
+import Install from "@/icons/Install.astro"
+import Amigos from "@/icons/Amigos.astro"
+import Notification from "@/icons/Notification.astro"
+import SideMenuItem from "./SideMenuItem.astro"
+import SearchBarInteractive from "@/components/SearchBarInteractive.jsx";
+---
+<nav class="h-16 w-full bg-[#010101] flex items-center justify-between px-3 sticky top-0 z-40">
+  <!-- Izquierda -->
+  <div title="Spotify" class="flex items-center">
+    <LogoSpotify />
+  </div>
+
+  <!-- Centro -->
+  <div class="ml-48 flex items-center gap-2 w-2/6 max-w-xl text-zinc-400">
+    <div title="Home" class="flex items-center justify-center pb- bg-zinc-800 rounded-full w-12 h-12">
+      <SideMenuItem href="/">
+        <HomeIcon />
+      </SideMenuItem>
+    </div>
+
+    {/* Barra de búsqueda React */}
+    <SearchBarInteractive client:load />
+  </div>
+
+  <!-- Derecha: Íconos + Perfil -->
+  <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 text-sm hover:text-zinc-100  text-zinc-400 cursor-pointer">
+      <Install />
+      App installieren
+    </div>
+
+    <div title="Neues" class= "flex items-center gap-4 text-sm hover:text-zinc-100  text-zinc-400 cursor-pointer">
+        <Notification />
+    </div>
+
+     <div title="Freunde" class= "flex items-center gap-4 text-sm hover:text-zinc-100  text-zinc-400 cursor-pointer">
+        <Amigos />
+    </div>
+
+     <div class="flex items-center justify-center bg-zinc-800 rounded-full w-12 h-12 hover:text-zinc-100">
+  <img
+    src="https://i.scdn.co/image/ab67757000003b82ece5e51714439d0be4efab1a"
+    alt="Perfil"
+    class="w-10 h-10 rounded-full object-cover transition-transform duration-300 ease-in-out hover:scale-110"
+  />
+</div>
+  </div>
+</nav>
+  
+   

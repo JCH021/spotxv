@@ -1,0 +1,53 @@
+---
+import type { Playlist } from "@/lib/data"
+import { CardPlayButton } from "./CardPlayButton"
+
+interface Props {
+  playlist: Playlist
+}
+
+const { playlist } = Astro.props
+const { id, cover, title, artists } = playlist
+
+const artistsString = artists.join(", ")
+---
+
+<article
+  class="group relative flex flex-col
+         bg-zinc-800/40 hover:bg-zinc-700/70
+         rounded-lg p-4
+         transition-all duration-300
+         shadow-md hover:shadow-xl"
+>
+  <a href={`/playlist/${id}`} class="flex flex-col gap-4">
+    <!-- Imagen grande -->
+    <picture class="w-full aspect-square rounded-md overflow-hidden shadow-lg">
+      <img
+        src={cover}
+        alt={`Cover of ${title} by ${artistsString}`}
+        class="object-cover w-full h-full"
+      />
+    </picture>
+
+    <!-- Texto -->
+    <div class="flex flex-col gap-1">
+      <h4 class="text-white font-semibold truncate">
+        {title}
+      </h4>
+      <p class="text-sm text-zinc-400 line-clamp-2">
+        {artistsString}
+      </p>
+    </div>
+  </a>
+
+  <!-- Botón Play flotante -->
+  <div
+    class="absolute bottom-20 right-6
+           opacity-0 translate-y-2 scale-95
+           group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100
+           transition-all duration-300 ease-out"
+  >
+    <CardPlayButton id={id} client:only="react" />
+  </div>
+</article>
+

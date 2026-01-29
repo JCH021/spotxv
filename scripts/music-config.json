@@ -1,0 +1,272 @@
+{
+  "playlists": {
+    "1": {
+      "title": "LieblingsSongs",
+      "artists": [
+        "Stevanz"
+      ],
+      "cover": "https://misc.scdn.co/liked-songs/liked-songs-640.jpg"
+    },
+    "2": {
+      "title": "Dzieciństwo",
+      "artists": [
+        "Vic🎀⛸️"
+      ],
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cb3c9936c8d5a2f7085b015cd"
+    },
+    "3": {
+      "title": "YHLQMDLG",
+      "artists": [
+        "Bad Bunny"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d0000b273548f7ec52da7313de0c5e4a0"
+    },
+    "4": {
+      "title": "2k25",
+      "artists": [
+        "Stevanz"
+      ],
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cc9717db1439e0e9cfd169c57"
+    },
+    "5": {
+      "title": "Bad Bunny",
+      "artists": [
+        "Bad Bunny"
+      ],
+      "cover": "https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13"
+    },
+    "6": {
+      "title": "Homerun",
+      "artists": [
+        "Paulo Londra"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d0000b273cf7e54f668d6a31dd6566f24"
+    },
+    "7": {
+      "title": "Twenty One Pilots",
+      "artists": [
+        "Twenty One Pilots"
+      ],
+      "cover": "https://i.scdn.co/image/ab6761610000e5eb61a7ea26d33ded218cd1e59d"
+    },
+    "8": {
+      "title": "Hip Hop 2000s Musik",
+      "artists": [
+        "50 Cent"
+      ],
+      "cover": "https://i.scdn.co/image/df73c0cebe56cafe705ffdba5085ccbd5680bd16"
+    },
+    "9": {
+      "title": "Chill R&B Mix ",
+      "artists": [
+        "The Weekend"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00004851540204ce5f26aec0acfb77a7"
+    },
+    "10": {
+      "title": "Pop Mix",
+      "artists": [
+        "Rihana",
+        "Katy Perry"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d0000b2731c5eacf6965d328c2c795cef"
+    },
+    "11": {
+      "title": "Latin Mix",
+      "artists": [
+        "Bad Bunny",
+        "Rauw alejandro",
+        "Shakira",
+        "Karol G",
+        "Feid"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00004851922a7339d969b5f0262580f5"
+    },
+    "12": {
+      "title": "Mega Hit Mix",
+      "artists": [
+        "Dua lipa",
+        "Artemas",
+        "Olivia Rodrigo",
+        "Harry Styles"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d00004851bb1e7090e662ce98b0e1b4c0"
+    },
+    "13": {
+      "title": "Rock Mix",
+      "artists": [
+        "Red Hot Chilli Pepers",
+        "Twenty One Pilots",
+        "Green Day"
+      ],
+      "cover": "https://i.scdn.co/image/ab67616d0000485108a1b1e0674086d3f1995e1b"
+    }
+  },
+  "songs": {
+    "1": {
+      "1": {
+        "title": "Airbag",
+        "artists": [
+          "EasyKid"
+        ],
+        "album": "Airbag"
+      },
+      "2": {
+        "title": "dirty little secret",
+        "artists": [
+          "Artemas"
+        ],
+        "album": "Artemas"
+      },
+      "3": {
+        "title": "jjksdfhksdhfskjdf",
+        "artists": [
+          "Artemas"
+        ],
+        "album": "Artemas"
+      },
+      "4": {
+        "title": "wet dreams",
+        "artists": [
+          "Artemas"
+        ],
+        "album": "Artemas"
+      },
+      "5": {
+        "title": "eyes don't lie",
+        "artists": [
+          "isabel laRosa"
+        ],
+        "album": "isabel laRosa"
+      }
+    },
+    "2": {
+      "1": {
+        "title": "Lili",
+        "artists": [
+          "Enej"
+        ],
+        "album": "Folkhorod"
+      },
+      "2": {
+        "title": "Tak Smakuje Życie",
+        "artists": [
+          "Enej"
+        ],
+        "album": "Folkhorod"
+      },
+      "3": {
+        "title": "Symetryczno Liryczna",
+        "artists": [
+          "Enej"
+        ],
+        "album": "Folkhorod"
+      },
+      "4": {
+        "title": "Skrzydlate Ręce",
+        "artists": [
+          "Enej"
+        ],
+        "album": "Folkhorod"
+      },
+      "5": {
+        "title": "Zbudujemy Dom",
+        "artists": [
+          "Enej"
+        ],
+        "album": "Folkhorod"
+      }
+    },
+    "3": {
+      "1": {
+        "title": "Si Veo A Tu Mama",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "album": "YHLQMDLG"
+      },
+      "2": {
+        "title": "La Dificil",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "album": "YHLQMDLG"
+      },
+      "3": {
+        "title": "Pero Ya No",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "album": "YHLQMDLG"
+      },
+      "4": {
+        "title": "La Santa",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "album": "YHLQMDLG"
+      },
+      "5": {
+        "title": "Yo Perreo Sola",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "album": "YHLQMDLG"
+      }
+    },
+    "8": {
+      "2": {
+        "title": "Eminem Feat Dido - Stan (Audio)",
+        "artists": [
+          "YOUMUSIC"
+        ],
+        "album": "Eminem Feat Dido - Stan (Audio)"
+      }
+    },
+    "9": {
+      "1": {
+        "title": "The Weeknd - Is There Someone Else? (Audio)",
+        "artists": [
+          "TheWeekndVEVO"
+        ],
+        "album": "The Weeknd - Is There Someone Else? (Audio)"
+      }
+    },
+    "10": {
+      "1": {
+        "title": "Bruno Mars Locked Out Of Heaven [audio HQ]",
+        "artists": [
+          "thegreatestsong Discography"
+        ],
+        "album": "Bruno Mars Locked Out Of Heaven [audio HQ]"
+      }
+    },
+    "11": {
+      "1": {
+        "title": "Bad Bunny - Debí Tirar Más Fotos (Letra) DtMF",
+        "artists": [
+          "Silvia Zc"
+        ],
+        "album": "Bad Bunny - Debí Tirar Más Fotos (Letra) DtMF"
+      }
+    },
+    "12": {
+      "1": {
+        "title": "Dua Lipa - Levitating",
+        "artists": [
+          "Revive Music"
+        ],
+        "album": "Dua Lipa - Levitating"
+      }
+    },
+    "13": {
+      "1": {
+        "title": "Red Hot Chili Peppers - Can't Stop (Lyrics)",
+        "artists": [
+          "7clouds Rock"
+        ],
+        "album": "Red Hot Chili Peppers - Can't Stop (Lyrics)"
+      }
+    }
+  }
+}

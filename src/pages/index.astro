@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro"
+import PlayListItemCard from "@/components/PlayListItemCard.astro"
+import { playlists } from "@/lib/data"
+import Greeting from "@/components/Greeting.svelte"
+import PlayListItemCardBig from "@/components/PlayListItemCardBig.astro"
+---
+
+<Layout title="Spotxv">
+  <div
+    id="playlist-container"
+    class="relative transition-all duration-1000 bg-blue-900"
+  >
+    <!-- <PageHeader /> -->
+
+     <div class="relative z-10 px-8 pt-4">
+      <div class="flex gap-3 mb-4">
+  <button class="px-4 py-1 rounded-full bg-white text-black font-medium hover:scale-105 transition">
+    Alle
+  </button>
+  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
+    Musik
+  </button>
+  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
+    Podcasts
+  </button>
+  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
+    Hörbücher
+  </button>
+</div>
+      <div class="grid grid-cols-4 gap-4 mt-6">
+      {playlists.slice(0, 8).map((playlist) => (
+      <PlayListItemCard playlist={playlist} />
+       ))}
+      </div>
+      <h2 class="text-white pt-12 hover:underline  text-2xl font-bold tracking-tight">
+      Deine PlayLists
+      </h2>
+      <div class="grid grid-cols-6 gap-4 mt-6">
+      {playlists.slice(0, 6).map((playlist) => (
+      <PlayListItemCardBig playlist={playlist} />
+       ))}
+      </div>
+      <h2 class="text-white pt-12 hover:underline  text-2xl font-bold tracking-tight">
+      Deine Top-Mixtapes
+      </h2>
+      <div class="grid grid-cols-6 gap-4 mt-6">
+      {playlists.slice(7, 13).map((playlist) => (
+      <PlayListItemCardBig playlist={playlist} />
+      ))}
+      </div>
+
+
+      <div class="absolute inset-0 -z-[1] 
+            bg-[linear-gradient(to_top,#171717_0%,#171717_80%,transparent_100%)]">
+      </div>
+
+    </div>
+
+    <style></style>
+  </div>
+</Layout>
