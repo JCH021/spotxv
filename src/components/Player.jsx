@@ -13,7 +13,7 @@ export const Player = memo(function Player() {
   const audioRef = useRef();
   const {getNextSong} = useCurrentMusic(currentMusic)
   
-  const currentSongIdRef = useRef(null); // ✅ Mantener la ref
+  const currentSongIdRef = useRef(null); 
   const shouldAutoPlayRef = useRef(false);
   const loadTimeoutRef = useRef(null);
 
