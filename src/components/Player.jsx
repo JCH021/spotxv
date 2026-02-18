@@ -17,11 +17,11 @@ export const Player = memo(function Player() {
   const shouldAutoPlayRef = useRef(false);
   const loadTimeoutRef = useRef(null);
 
-  // ✅ Inicializar con audio global Y sincronizar ref con store
+  // Inicializar con audio global Y sincronizar ref con store
   useEffect(() => {
     audioRef.current = getGlobalAudio();
     
-    // ✅ Sincronizar currentSongIdRef con lastSongId del store al montar
+    //  Sincronizar currentSongIdRef con lastSongId del store al montar
     const { lastSongId } = usePlayerStore.getState();
     currentSongIdRef.current = lastSongId;
     
@@ -41,7 +41,7 @@ export const Player = memo(function Player() {
     }
   }, [volume])
 
-  // ✅ Guardar currentTime periódicamente
+  
   useEffect(() => {
     const interval = setInterval(() => {
       if (audioRef.current && !audioRef.current.paused) {
@@ -52,7 +52,7 @@ export const Player = memo(function Player() {
     return () => clearInterval(interval);
   }, [setCurrentTime])
 
-  // ✅ Añadir listener de ended al audio global
+  
   useEffect(() => {
     const audioElement = audioRef.current;
     if (!audioElement) return;
@@ -81,7 +81,7 @@ export const Player = memo(function Player() {
 
     const songId = `${playlist.albumId}-${song.id}`;
 
-    // ✅ Si la ref local ya tiene esta canción, no recargar
+    
     if (currentSongIdRef.current === songId) {
       return;
     }

@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [tailwind(), svelte(), react()],
   output: 'server',
   adapter: vercel({
-    runtime: 'nodejs20.x', // << Esto fuerza Node 20
+    runtime: 'nodejs20.x', // 
   }),
 });

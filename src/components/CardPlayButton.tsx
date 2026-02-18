@@ -3,7 +3,6 @@ import { getPlayListInfoById } from "@/services/ApiService";
 import { Pause, Play } from "@/icons/PlayerIcons"
 
 
-// ✅ Añadir interfaz de tipos
 interface Props {
   id: string | number;
   size?: 'small' | 'large';
