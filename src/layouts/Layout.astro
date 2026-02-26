@@ -52,29 +52,31 @@ const { title } = Astro.props
       </div>
 
       <!-- Player -->
-      <footer class="h-[80px] bg-[#010101] shrink-0 z-20 pt-4">
-        <Player client:only="react" />
+      <footer class="bg-[#010101] shrink-0 z-20">
+        <div class="h-[80px] pt-4 mb-14 md:mb-0">
+          <Player client:only="react" />
+        </div>
       </footer>
 
     <!-- Unteres Navigationsmenü (nur Mobilgeräte) -->
-      <nav class="md:hidden fixed bottom-[80px] left-0 right-0 z-30 bg-[#010101] border-t border-zinc-800 flex justify-around items-center h-14">
-        <a href="/" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
-          <HomeIcon />
-          <span class="text-[10px]">Home</span>
-        </a>
-        <a href="/search" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
-          <Lupe />
-          <span class="text-[10px]">Suche</span>
-        </a>
-        <a href="/library" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
-          <Library />
-          <span class="text-[10px]">Bibliothek</span>
-        </a>
-        <a href="/" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
-          <Notification />
-          <span class="text-[10px]">Neues</span>
-        </a>
-      </nav>
+        <nav class="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-[#010101] border-t border-zinc-800 flex justify-around items-center h-14">
+            <a href="/" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
+              <HomeIcon />
+              <span class="text-[10px]">Inicio</span>
+            </a>
+            <a href="/search" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
+              <Lupe />
+              <span class="text-[10px]">Buscar</span>
+            </a>
+            <a href="/library" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
+              <Library />
+              <span class="text-[10px]">Bibliothek</span>
+            </a>
+            <a href="/notifications" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
+              <Notification />
+              <span class="text-[10px]">Novedades</span>
+            </a>
+          </nav>
 
     </div>
 
