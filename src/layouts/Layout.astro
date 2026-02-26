@@ -53,7 +53,7 @@ const { title } = Astro.props
 
       <!-- Player -->
       <footer class="bg-[#010101] shrink-0 z-20">
-        <div class="h-[80px] pt-4 mb-14 md:mb-0">
+        <div class="h-auto md:h-[80px] pt-2 mb-14 pb-4 md:mb-0">
           <Player client:only="react" />
         </div>
       </footer>
@@ -62,11 +62,11 @@ const { title } = Astro.props
         <nav class="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-[#010101] border-t border-zinc-800 flex justify-around items-center h-14">
             <a href="/" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
               <HomeIcon />
-              <span class="text-[10px]">Inicio</span>
+              <span class="text-[10px]">Home</span>
             </a>
             <a href="/search" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
               <Lupe />
-              <span class="text-[10px]">Buscar</span>
+              <span class="text-[10px]">Suchen</span>
             </a>
             <a href="/library" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
               <Library />
@@ -74,7 +74,7 @@ const { title } = Astro.props
             </a>
             <a href="/notifications" class="flex flex-col items-center gap-1 text-zinc-400 hover:text-white transition-colors">
               <Notification />
-              <span class="text-[10px]">Novedades</span>
+              <span class="text-[10px]">Neues</span>
             </a>
           </nav>
 

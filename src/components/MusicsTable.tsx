@@ -33,9 +33,9 @@ export const MusicsTable = ({songs}: Props) => {
             return (
               <tr
                 key={`${song.albumId}-${song.id}`} className="text-gray-300 border-spacing-0 text-sm font-light hover:bg-white/10 overflow-hidden transition duration-300 group">
-                <td className="relative px-4 py-2 rounded-tl-lg rounded-bl-lg w-5">
+                <td className="relative px-4 py-2 rounded-tl-lg rounded-bl-lg w-5 ">
                   <span className="absolute top-5 opacity-100 transition-all group-hover:opacity-0">{index + 1}</span>
-                  <div className="absolute top-5 opacity-0 transition-all group-hover:opacity-100">
+                  <div className="opacity-0 transition-all group-hover:opacity-100">
                     <MusicsTablePlay song={song} isCurrentSong={isCurrentSongBoolean}/>
                   </div>
                 </td>
@@ -52,7 +52,7 @@ export const MusicsTable = ({songs}: Props) => {
                     <span>{song.artists.join(", ")}</span>
                   </div>
                 </td>
-                <td className="px-4 py-2 hidden md:table-cel">{song.album}</td>
+                <td className="px-4 py-2 hidden md:table-cell">{song.album}</td>
                 <td className="px-4 py-2 rounded-tr-lg rounded-br-lg hidden sm:table-cell">{song.duration}</td>
               </tr>
             )
