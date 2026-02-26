@@ -15,7 +15,7 @@ const artistsString = artists.join(", ")
 <article
   class="group relative flex flex-col
          bg-zinc-800/40 hover:bg-zinc-700/70
-         rounded-lg p-4
+         rounded-lg p-2 md:p-4
          transition-all duration-300
          shadow-md hover:shadow-xl"
 >
@@ -31,7 +31,7 @@ const artistsString = artists.join(", ")
 
     <!-- Texto -->
     <div class="flex flex-col gap-1">
-      <h4 class="text-white font-semibold truncate">
+      <h4 class="text-white font-semibold truncate text-sm md:text-base">
         {title}
       </h4>
       <p class="text-sm text-zinc-400 line-clamp-2">

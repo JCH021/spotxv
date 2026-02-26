@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SideMenuCard from "@/components/SideMenuCard.astro"
+import LibraryIcon from "@/icons/Library.astro"
+import { playlists } from "@/lib/data"
+---
+
+<Layout title="Bibliothek - Spotxv">
+  <div class="px-4 pt-6 md:hidden">
+    <h1 class="text-white text-2xl font-bold mb-4 flex items-center gap-2">
+      <LibraryIcon />
+      Bibliothek
+    </h1>
+    <div class="flex flex-col gap-1">
+      {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
+    </div>
+  </div>
+</Layout>

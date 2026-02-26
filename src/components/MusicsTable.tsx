@@ -20,8 +20,8 @@ export const MusicsTable = ({songs}: Props) => {
       <tr className="text-zinc-400 text-sm">
         <th className="px-4 py-2 font-light">#</th>
         <th className="px-4 py-2 font-light">Title</th>
-        <th className="px-4 py-2 font-light">Álbum</th>
-        <th className="px-4 py-2 font-light"><TimeIcon /></th>
+        <th className="px-4 py-2 font-light hidden md:table-cell">Álbum</th>
+        <th className="px-4 py-2 font-light hidden sm:table-cell"><TimeIcon /></th>
       </tr>
       </thead>
 
@@ -39,9 +39,9 @@ export const MusicsTable = ({songs}: Props) => {
                     <MusicsTablePlay song={song} isCurrentSong={isCurrentSongBoolean}/>
                   </div>
                 </td>
-                <td className="px-4 py-2 flex gap-3">
+                <td className="px-2 md:px-4 py-2 flex gap-3">
                   <picture className="">
-                    <img src={song.image} alt={song.title} className="w-11 h-11"/>
+                    <img src={song.image} alt={song.title} className="w-9 h-9 md:w-11 md:h-11"/>
                   </picture>
                   <div className="flex flex-col">
                     <h3 className={
@@ -52,8 +52,8 @@ export const MusicsTable = ({songs}: Props) => {
                     <span>{song.artists.join(", ")}</span>
                   </div>
                 </td>
-                <td className="px-4 py-2">{song.album}</td>
-                <td className="px-4 py-2 rounded-tr-lg rounded-br-lg">{song.duration}</td>
+                <td className="px-4 py-2 hidden md:table-cel">{song.album}</td>
+                <td className="px-4 py-2 rounded-tr-lg rounded-br-lg hidden sm:table-cell">{song.duration}</td>
               </tr>
             )
           }

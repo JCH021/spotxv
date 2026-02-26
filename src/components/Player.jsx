@@ -163,19 +163,19 @@ export const Player = memo(function Player() {
   }, [isPlaying])
 
   return (
-    <div className="flex flex-row justify-between w-full px-1 z-50">
-      <div className="w-[200px]">
+    <div className="flex flex-col md:flex-row justify-between w-full px-2 md:px-4 z-50 gap-1 md:gap-0">
+      <div className="w-full md:w-[200px]">
         <PlayerCurrentSong {...currentMusic.song} />
       </div>
 
-      <div className="grid place-content-center gap-4 flex-1">
+      <div className="grid place-content-center gap-1 md:gap-4 flex-1">
         <div className="flex justify-center flex-col items-center">
           <PlayerControlButtonBar/>
           <PlayerSoundControl audio={audioRef} currentSong={currentMusic.song} />
         </div>
       </div>
 
-      <div className="grid place-content-center">
+      <div className="hidden md:grid place-content-center">
         <PlayerVolumeControl/>
       </div>
     </div>

@@ -5,9 +5,9 @@ export const PlayerSoundControl = ({ audio, currentSong }) => {
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const isSeeking = useRef(false)
-  const animationFrameRef = useRef(null) // ✅ NUEVO
+  const animationFrameRef = useRef(null) //  NUEVO
 
-  // ✅ Usar requestAnimationFrame para 60fps
+  //  Usar requestAnimationFrame para 60fps
   useEffect(() => {
     const updateTime = () => {
       if (audio.current && !isSeeking.current) {
@@ -43,7 +43,7 @@ export const PlayerSoundControl = ({ audio, currentSong }) => {
         value={[currentTime]}
         max={duration || 0}
         min={0}
-        className="w-[400px]"
+        className="w-[180px] sm:w-[300px] md:w-[400px]"
         onValueChange={(value) => {
           const [newCurrentTime] = value
           isSeeking.current = true

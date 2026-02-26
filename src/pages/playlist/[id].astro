@@ -6,14 +6,14 @@ import {MusicsTable} from "@/components/MusicsTable"
 
 const { id } = Astro.params
 
-// ✅ Verificar que id existe
+//  Verificar que id existe
 if (!id) {
   return Astro.redirect('/404')
 }
 
 const playlist = allPlaylists.find((playlist) => playlist.id === id)
 
-// ✅ Verificar que playlist existe
+// Verificar que playlist existe
 if (!playlist) {
   return Astro.redirect('/404')
 }
@@ -28,8 +28,8 @@ const playListSongs = songs.filter((song) => song.albumId === playlist.albumId)
     style={`background-color: ${playlist.color.accent}`}
     transition:name=`playlist ${id} box`
   >
-    <header class="flex flex-row gap-8 px-6 mt-12">
-      <picture class="aspect-square w-52 h-52 flex-none">
+    <header class="flex flex-col md:flex-row gap-4 md:gap-8 px-4 md:px-6 mt-6 md:mt-12 md:items-end">
+      <picture class="aspect-square w-36 h-36 md:w-52 md:h-52 flex-none">
         <img
           src={playlist.cover}
           alt={`Cover of ${playlist.title}`}
@@ -41,14 +41,14 @@ const playListSongs = songs.filter((song) => song.albumId === playlist.albumId)
       <div class="flex flex-col justify-between">
         <h2 class="flex flex-1 items-end">Playlist</h2>
         <div>
-          <h1 class="text-5xl font-bold block text-white">
+          <h1 class="text-2xl md:text-5xl font-bold block text-white  md:text-left">
             <span transition:name=`playlist ${playlist.id} title`>
                 {playlist.title}
             </span>
           </h1>
         </div>
 
-        <div class="flex-1 flex items-end">
+        <div class="flex-1 flex items-end md:justify-start">
           <div class="text-sm text-gray-300 font-normal">
             <div transition:name=`playlist ${playlist.id} artists`>
               <span>{playlist.artists.join(", ")}</span>

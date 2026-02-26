@@ -58,7 +58,7 @@ export const MusicsTablePlay = ({song, isCurrentSong}: Props) => {
 
   const className = "hover:scale-125"
   return (
-    <button className="text-white" onClick={() => handleClick(song)}>
+    <button className="text-white p-2 md:p-0" onClick={() => handleClick(song)}>
       {isCurrentSongRunning(song) ? <Pause className={className}/> : <Play className={className}/>}
     </button>
   )

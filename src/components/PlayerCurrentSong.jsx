@@ -2,7 +2,7 @@ export const PlayerCurrentSong = ({image, title, artists}) => {
   return (
     <div className="flex items-center gap-3 w-full overflow-hidden">
       {image && (
-        <picture className="w-14 h-14 flex-shrink-0 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
+        <picture className="w-10 h-10 md:w-14 md:h-14 flex-shrink-0 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
           <img 
             src={image} 
             alt={title} 

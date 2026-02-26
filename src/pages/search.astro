@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SearchBarInteractive from "@/components/SearchBarInteractive.jsx"
+---
+
+<Layout title="Buscar - Spotxv">
+  <div class="px-4 pt-6">
+    <!-- Solo visible en móvil, en desktop ya está en la nav -->
+    <div class="md:hidden">
+      <h1 class="text-white text-2xl font-bold mb-4">Buscar</h1>
+      <SearchBarInteractive client:load />
+    </div>
+
+    <!-- En desktop redirigir o mostrar explorar -->
+    <div class="hidden md:block">
+      <h1 class="text-white text-2xl font-bold">Explorar</h1>
+    </div>
+  </div>
+</Layout>

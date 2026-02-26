@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro"
 import PlayListItemCard from "@/components/PlayListItemCard.astro"
 import { playlists } from "@/lib/data"
-import Greeting from "@/components/Greeting.svelte"
 import PlayListItemCardBig from "@/components/PlayListItemCardBig.astro"
 ---
 
@@ -11,52 +10,58 @@ import PlayListItemCardBig from "@/components/PlayListItemCardBig.astro"
     id="playlist-container"
     class="relative transition-all duration-1000 bg-blue-900"
   >
-    <!-- <PageHeader /> -->
 
-     <div class="relative z-10 px-8 pt-4">
-      <div class="flex gap-3 mb-4">
-  <button class="px-4 py-1 rounded-full bg-white text-black font-medium hover:scale-105 transition">
-    Alle
-  </button>
-  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
-    Musik
-  </button>
-  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
-    Podcasts
-  </button>
-  <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition">
-    Hörbücher
-  </button>
-</div>
-      <div class="grid grid-cols-4 gap-4 mt-6">
-      {playlists.slice(0, 8).map((playlist) => (
-      <PlayListItemCard playlist={playlist} />
-       ))}
+    <div class="relative z-10 px-4 md:px-8 pt-4">
+
+      <!-- Filter -->
+      <div class="flex gap-2 md:gap-3 mb-4 flex-wrap">
+        <button class="px-4 py-1 rounded-full bg-white text-black font-medium hover:scale-105 transition text-sm md:text-base">
+          Alle
+        </button>
+        <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition text-sm md:text-base">
+          Musik
+        </button>
+        <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition text-sm md:text-base">
+          Podcasts
+        </button>
+        <button class="px-4 py-1 rounded-full bg-white/10 text-white font-medium hover:bg-zinc-500 transition text-sm md:text-base">
+          Hörbücher
+        </button>
       </div>
-      <h2 class="text-white pt-12 hover:underline  text-2xl font-bold tracking-tight">
-      Deine PlayLists
+
+      <!-- Principal Grid: 2 cols Phone, 4 desktop -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-6">
+        {playlists.slice(0, 8).map((playlist) => (
+          <PlayListItemCard playlist={playlist} />
+        ))}
+      </div>
+
+      <!-- Section: Deine PlayLists -->
+      <h2 class="text-white pt-10 md:pt-12 hover:underline text-xl md:text-2xl font-bold tracking-tight">
+        Deine PlayLists
       </h2>
-      <div class="grid grid-cols-6 gap-4 mt-6">
-      {playlists.slice(0, 6).map((playlist) => (
-      <PlayListItemCardBig playlist={playlist} />
-       ))}
+      <!-- Grid: 2 cols Phone, 3 sm, 6 desktop -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6">
+        {playlists.slice(0, 6).map((playlist) => (
+          <PlayListItemCardBig playlist={playlist} />
+        ))}
       </div>
-      <h2 class="text-white pt-12 hover:underline  text-2xl font-bold tracking-tight">
-      Deine Top-Mixtapes
+
+      <!-- Section: Deine Top-Mixtapes -->
+      <h2 class="text-white pt-10 md:pt-12 hover:underline text-xl md:text-2xl font-bold tracking-tight">
+        Deine Top-Mixtapes
       </h2>
-      <div class="grid grid-cols-6 gap-4 mt-6">
-      {playlists.slice(7, 13).map((playlist) => (
-      <PlayListItemCardBig playlist={playlist} />
-      ))}
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6 pb-8">
+        {playlists.slice(7, 13).map((playlist) => (
+          <PlayListItemCardBig playlist={playlist} />
+        ))}
       </div>
 
-
+      <!-- bg Gradient-->
       <div class="absolute inset-0 -z-[1] 
             bg-[linear-gradient(to_top,#171717_0%,#171717_80%,transparent_100%)]">
       </div>
-
+      
     </div>
-
-    <style></style>
   </div>
 </Layout>
